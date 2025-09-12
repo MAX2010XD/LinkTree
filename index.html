@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mein TikTok Linktree</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+    	margin: 0;
+    	padding: 20px;
+    	min-height: 100vh;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+    	color: #fff;
+    	background: linear-gradient(270deg, #ff0050, #32cd32, #1e90ff, #ff9900);
+    	background-size: 800% 800%;
+    	animation: gradientAnimation 15s ease infinite;
+    }
+
+@keyframes gradientAnimation {
+    	0% {background-position: 0% 50%;}
+    	50% {background-position: 100% 50%;}
+    	100% {background-position: 0% 50%;}
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        border: 3px solid #ff0050;
+	transition: box-shadow 0.5s, transform 0.5s;
+    }
+
+    .profile-pic:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 25px #ff0050, 0 0 50px #ff3399, 0 0 75px #ff66cc;
+
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 5px;
+        text-align: center;
+	color: #000000;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #000000;
+    }
+    .link-btn {
+        display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	width: 100%;
+    	max-width: 300px;
+    	padding: 14px;
+    	margin: 10px 0;
+    	background-color: rgba(50, 205, 50, 0.8);
+    	color: #000000;
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-size: 16px;
+    	border-radius: 12px;
+    	transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .link-btn i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .link-btn:hover {
+        background-color: #e60045;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e60045, 0 0 40px #ff3399, 0 0 60px #ff66cc;
+    }
+
+    footer {
+        margin-top: 35px;
+        color: #000000;
+        font-size: 14px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<img src="profielbild.png.png" alt="Profilbild" width="150" height="150" class="profile-pic">
+<h1>Hey! 👋 Hier findest du alle Links</h1>
+<p><b>Folge mir auf meinen anderen Plattformen</b>.</p>
+
+<a href="https://www.youtube.com/@MAX2010XD" class="link-btn" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+<a href="https://www.instagram.com/max2010xd_tiktok" class="link-btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+<a href="https://www.tiktok.com/@max2010xd" class="link-btn" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+<a href="https://discord.gg/9UMK466WX3" class="link-btn" target="_blank"><i class="fab fa-discord"></i> Discord Server</a>
+
+<footer><b>© 2025 MAX2010XD</b>.</footer>
+
+</body>
+</html>
